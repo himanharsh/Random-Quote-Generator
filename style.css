@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(quote-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100svh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: gold;
+    font-family: Nunito, sans-serif;
+}
+
+main{
+    background: #141010;
+    border: 1px solid gold;
+    border-radius: 10px;
+    margin: 0 0 10% 0;
+    width: 75%;
+}
+
+header{
+    margin-bottom: 50px;
+    padding: 5px;
+    background-color: #141010;
+    border: 2px solid gold;
+    font-size: 2rem;
+}
+
+.container{
+    padding: 10px 5px;
+    font-size: 1.5rem;
+}
+
+.quote{
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
+}
+
+.person{
+    margin-top: 20px;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+}
+
+button{
+    margin: 20px 0 10px 0;
+    padding: 5px 30px 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid #141010;
+    border-radius: 20px;
+    background-color: gold;
+    box-shadow: 0 0 10px gold;
+    color: #141010;
+    transition: 1s;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 0 30px gold;
+}
+
+#nQuote{
+    margin-right: 20px;
+}
+
+/* media-queries */
+@media screen and (max-width: 860px){
+    header{
+        font-size: 1.6rem;
+    }
+
+    .container{
+        font-size: 1.3rem;
+    }
+
+    button{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header{
+        font-size: 1.3rem;
+    }
+
+    .container{
+        font-size: 1.1rem;
+    }
+
+    button{
+        font-size: 1rem;
+    }
+}
