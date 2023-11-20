@@ -102,4 +102,8 @@ button:hover{
     button{
         font-size: 1rem;
     }
+
+    #nQuote{
+        margin-right: 0;
+    }
 }
